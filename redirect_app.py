@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 client = MongoClient(os.environ["MONGO_URI"])
-db = client["your_db_name"]
+db = client["Cluster0"]
 settings_col = db["settings"]
 
 @app.route("/f/<code>")
